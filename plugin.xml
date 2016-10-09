@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-device" version="0.2.3">
+    <name>FileWriter</name>
+    <description>Internal BiteSquad Library</description>
+    <license>Apache 2.0</license>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="FileWriter">
+                <param name="ios-package" value="FileWriter"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/FileWriter.h" />
+        <source-file src="src/ios/FileWriter.m" />
+    </platform>
+</plugin>
